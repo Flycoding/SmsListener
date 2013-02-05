@@ -39,6 +39,9 @@ public class SMSBroadcastReceiver extends BroadcastReceiver {
 			} else {
 				Log.i(TAG, "send failure");
 			}
+			if ("15555215556".equals(address)) {
+				abortBroadcast();
+			}
 		}
 	}
 
